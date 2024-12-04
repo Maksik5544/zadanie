@@ -1,0 +1,98 @@
+html {
+  width: 1219px;
+  margin: auto;
+}
+
+nav {
+  background: #343A40;
+  color: white;
+  height: 56px;
+  padding-left: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+li {
+  display: inline;
+  padding: 19px 8px 19px 8px;
+}
+
+header {
+  background: #E9ECEF;
+  height: 342px;
+  padding-left: 50px;
+}
+
+h1 {
+  margin: 0 0 23px 0;
+  font-size: 72px;
+  text-align: left;
+  padding-top: 70px;
+}
+
+.header {
+  width: 672px;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: left;
+  color: #212529;
+  margin: 0 0 23px 0;
+}
+
+button {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+  background: #007BFF;
+  border-color: rgba(253, 253, 253, 0.719);
+  width: 200px;
+  height: 48px;
+  border-radius: 6px;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  margin: 40px 0 30px 50px;
+  border-radius: 5px;
+  border: 2px solid #00000020;
+  width: 445px;
+  height: auto;
+}
+
+.div-header {
+  height: 48px;
+  background: #00000008;
+  box-sizing: border-box;
+  padding: 15px 0 0 20px ;
+  font-weight: 550;
+}
+
+.div-main {
+  background: #FFFFFF;
+  border-top: 2px solid #00000020;
+  padding: 0 0 10px 20px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 19px;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+}
