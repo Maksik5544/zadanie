@@ -3,32 +3,56 @@
 <head>
   <meta charset="utf-8"/>
   <title>Document</title>
-  <link rel="stylesheet" href="reset.css"/>
   <link rel="stylesheet" href="style.css"/>
+
+  <!-- Такого файла у тебя нету в директории, он не импортируется -->
+  <link rel="stylesheet" href="reset.css"/>
 </head>
 <body>
   <div>
     <nav>
       <ul>
-        <li>НЛК</li>
+        <!-- Обычно в навигации текст в li заворачивается в ссылки <a></a> и ссылки затем стилизуются -->
+        <li><a href="#">НЛК</a></li>
         <li>Портфолио</li>
         <li>Рейтинг</li>
         <li>Помощь</li>
       </ul>
     </nav>
   </div>
+
+  <!-- Для красоты и читаемости можно разделять пустой строкой независимые блоки одного уровня -->
   <header>
     <h1>Портфолио</h1>
     <div class="header">Это место где собраны ваши научные публикации.Здесь вы можете добавлять
       свои научные работы, получать информацию об их уникальности и смотреть
       отзовы ваших научных руководителей.
     </div>
-    <button>Добавить работу</button>
+    <!--
+      Указывай у кнопок type="button", если это обычная кнопка, по дефолту button имеет тип submit
+      https://htmlbook.ru/html/button/type
+    -->
+    <button type="button">Добавить работу</button>
   </header>
+
   <main>
     <section class="section-container">
       <div class="container">
+        <!--
+          Тег header может использоваться не только как глобальный, но и локальный.
+          В частности для твоих карточек .container
+          Для стилизации просто используй скоуп класса .container
+
+          <header>Ваш профиль</header>
+          <style>
+            .section-container .container header {
+              /* styles here */
+            }
+            /* P.S. Я тут написал это внутри <style> для примера, офк нужно это прописывать в .css файле))) */
+          </style>
+        -->
         <div class="div-header"><p>Ваш профиль</p></div>
+        <!-- Также тут стоит подумать над названием класса, div-main - отстой)) -->
         <div class="div-main">
           <h3>Сергей Павлович Фролов</h3>
           <p><strong>Научная степень: </strong>Магистр</p>
@@ -46,6 +70,7 @@
         </div>
       </div>
     </section>
+
     <section>
       <table>
         <thead>
@@ -121,6 +146,7 @@
       </table>
     </section>
   </main>
+
   <footer>
     <p>Научный личный кабинет. Все права защищены.</p>
   </footer>
