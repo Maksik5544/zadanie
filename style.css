@@ -1,13 +1,36 @@
 html {
   width: 1219px;
   margin: auto;
+--color-link: #ffffff;
+}
+
+@media ( max-width: 991px ) {
+  html {
+    width: 768px;
+  }
+}
+
+@media ( max-width: 575px ) {
+  html {
+    width: 320px;
+  }
 }
 
 nav {
   background: #343A40;
-  color: white;
+  color: var(--color-link);
   height: 56px;
   padding-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: rgba(34, 34, 235, 0.925);
+  text-decoration: underline;
 }
 
 ul {
@@ -20,8 +43,12 @@ ul {
 }
 
 li {
-  display: inline;
   padding: 19px 8px 19px 8px;
+  transition: 0.5s;
+}
+
+li:hover {
+background: #212529;
 }
 
 header {
@@ -37,25 +64,32 @@ h1 {
   padding-top: 70px;
 }
 
-.header {
+.description {
   width: 672px;
   font-family: sans-serif;
   font-size: 16px;
   line-height: 21px;
-  text-align: left;
   color: #212529;
   margin: 0 0 23px 0;
 }
 
 button {
   font-family: sans-serif;
-  font-size: 20px;
-  color: #FFFFFF;
+  color: var(--color-link);
   background: #007BFF;
   border-color: rgba(253, 253, 253, 0.719);
+  font-size: 20px;
   width: 200px;
   height: 48px;
   border-radius: 6px;
+}
+
+.section-container .container-but button {
+  font-size: 16px;
+  width: 140px;
+  height: 38px;
+  border-radius: 6px;
+  margin-top: 12px;
 }
 
 .section-container {
@@ -63,12 +97,20 @@ button {
   flex-direction: row;
 }
 
+.container-but {
+  margin: 40px 0 30px 0;
+  border-radius: 5px;
+  border: 2px solid #00000020;
+  width: 445px;
+  height: 234px;
+}
+
 .container {
   margin: 40px 0 30px 50px;
   border-radius: 5px;
   border: 2px solid #00000020;
-  width: 445px;
-  height: auto;
+  width: 350px;
+  height: 165px;
 }
 
 .div-header {
@@ -80,14 +122,15 @@ button {
 }
 
 .div-main {
-  background: #FFFFFF;
+  background: var(--color-link);
   border-top: 2px solid #00000020;
-  padding: 0 0 10px 20px;
+  padding: 15px 0 10px 20px;
 }
 
 h3 {
   font-size: 20px;
   line-height: 19px;
+  margin-top: 10px;
 }
 
 p {
@@ -95,4 +138,36 @@ p {
   font-size: 16px;
   line-height: 19px;
   margin: 0;
+}
+
+section {
+  box-sizing: border-box;
+}
+
+.table {
+ padding-left: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0;
+}
+
+thead {
+  text-align: left;
+  background: #E9ECEF;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 12px;
+}
+
+footer {
+  background: #d5d6d8;
+  height: 56px;
+  box-sizing: border-box;
+  margin: 0;
+  padding-left: 50px;
+  padding-top: 16px;
 }
